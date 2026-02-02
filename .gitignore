@@ -427,3 +427,5 @@ INDIVIDUAL-REPORT/SOURCE-CODE/ SW734 Individual Report.synctex.gz
 storage/logs/
 storage/framework/
 storage/app/private/
+public/build/
+bootstrap/cache/

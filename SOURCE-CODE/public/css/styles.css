@@ -1,0 +1,835 @@
+.vector-background {
+    background-color: rgb(248, 233, 217);
+    min-height: 100vh; /* makes sure that the whole page is covered */
+    
+}
+
+.header-bottom-border {
+    border-bottom: 2px solid rgb(252, 196, 124);
+    box-shadow: 0 5px 20px rgba(253, 53, 8, 0.5); /* Adjust this line */
+}
+
+.restaurant-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
+.header-items .nav-link {
+    color: black !important; 
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+}
+
+#heroTextStyle {
+   color: rgba(255, 100, 0, 1);
+}
+
+
+.visit-now-button {
+    height: 70px;
+    background-color: rgba(255, 100, 0, 1);
+    border: solid 2px rgba(255, 100, 0, 1); /* Add border style */
+    transition: background-color 0.3s, border-color 0.3s; /* Optional: for smooth transition */
+}
+
+.visit-now-button:hover {
+    background-color: rgba(255, 70, 0, 1); /* Darker orange */
+    border-color: rgba(255, 70, 0, 1); /* Darker orange */
+}
+
+/* Dropdown menu styling */
+.nav-menu .dropdown-menu
+{
+    background-color: rgb(248, 233, 217);
+    border-bottom: 2px solid rgb(252, 196, 124);
+    box-shadow: 0 5px 20px rgba(253, 53, 8, 0.5);
+    border-radius: 5px;
+}
+
+/* Dropdown menu text styling */
+.nav-menu .dropdown-item
+{
+    color: black !important; 
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+}
+
+/* hover over styling */
+.nav-menu .dropdown-item:hover
+{
+    background-color: rgba(253, 53, 8, 0.1);
+}
+
+/* search bar positioning */
+.search-container {
+    position: relative;
+}
+
+/* search bar positioning */
+.search-bar
+{
+    display: flex;
+    align-items: center;
+}
+
+/* search bar styling & inputted text */
+.search-input  
+{
+    background-color: rgb(248, 233, 217);
+    border-bottom: 2px solid rgb(252, 196, 124);
+    box-shadow: 0 5px 20px rgba(253, 53, 8, 0.5);
+    border-radius: 5px;
+    color: black !important; 
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+}
+
+/* styling for placeholder text in search bar */
+.search-input::placeholder 
+{
+    color: black !important; 
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+}
+
+/* search bar button styling */
+.btn 
+{
+    background-color: rgba(255, 100, 0, 1);
+    border: solid 2px rgba(255, 100, 0, 1); /* Add border style */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* styling for hovering over search button */
+.btn:hover
+{
+    background-color: rgba(255, 70, 0, 1);
+    border-color: rgba(255, 70, 0, 1);
+}
+
+.view-menu-button {
+    height: 70px;
+    background-color: #19233f;
+    border: solid 2px #19233f;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-menu-button:hover {
+    background-color: #111a2b;
+    border-color: #111a2b;
+}
+
+
+.header-items .nav-link {
+    color: black !important; 
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    position: relative; /* For positioning the underline */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.header-items .nav-link:hover {
+    color: rgba(255, 100, 0, 1) !important; /* Set hover color to your preferred color */
+}
+
+/* Underline effect */
+.header-items .nav-link:after {
+    content: ''; /* Necessary for the pseudo-element */
+    position: absolute; /* Positioning it absolutely */
+    left: 0; /* Align to the left */
+    bottom: -5px; /* Position it slightly below the text */
+    width: 100%; /* Full width */
+    height: 2px; /* Height of the underline */
+    background-color: rgba(255, 100, 0, 1); /* Color of the underline */
+    transform: scaleX(0); /* Start with the underline hidden */
+    transition: transform 0.2s ease; /* Smooth transition for the underline */
+}
+
+.header-items .nav-link:hover:after {
+    transform: scaleX(1); /* Scale to full width on hover */
+}
+
+
+
+
+
+
+/* Special Section */
+
+.special__container {
+    text-align: center; /* Center-aligns text inside .special__container */
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border-radius: 1rem; /* Optional: to make it look softer */
+}
+
+.special__container :is(.section__header, .section__description) {
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.section__header {
+    font-weight: 700;
+}
+
+.special__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.special__card {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+
+.special__card:hover {
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.special__card img {
+    max-width: 170px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.special__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.special__footer .price {
+    font-size: 1.25rem; /* Adjust size as needed */
+    font-weight: 700; /* Optional: make it bolder */
+    color: var(--text-dark); /* Change color if necessary */
+    padding-top: 5px;
+}
+
+.special__card p {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    line-height: 1.75rem;
+}
+
+
+.special__ratings {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: goldenrod;
+
+}
+
+.special__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.special__container, .special__card p, .special__card h4 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 400; /* Regular weight to keep it readable */
+}
+
+
+
+/* Why People Choose Us Section */
+
+.choose-us-section {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    padding-left: 5px;
+}
+
+.choose-us-item {
+    margin-bottom: 15px; /* Add spacing between items */
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start; /* Align the top of the image and text */
+    gap: 10px; /* Space between image and text */
+}
+
+.content-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.text-container h5 {
+    margin: 0; /* Remove margin to align with paragraph */
+}
+
+.text-container p {
+    margin: 0; /* Remove margin for consistent spacing */
+}
+
+
+/* Testimonial section */
+
+.card {
+    border: none; /* Remove the border */
+    background-color: transparent; /* No background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: none; /* No shadow effect */
+    text-align: center; /* Center the text */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.user-content p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.ratings i {
+    color: goldenrod;
+}
+
+#testimonial_header {
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+#customer_fancy {
+    color: rgba(255, 100, 0, 1);
+    font-weight: bolder;
+}
+
+.user-image img {
+    width: 80px; /* Set width */
+    height: 80px; /* Set height to match width */
+    border-radius: 50%; /* This will create a circular image */
+    object-fit: cover; /* This will ensure the image fills the container without distortion */
+}
+
+.user-image {
+    display: flex; /* Flex to center image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/* Footer Section */
+
+.footer-background {
+    background-color: rgb(238, 218, 202); /* Your footer background color */
+}
+
+.footer {
+    padding: 20px 0; /* Optional: adjust as needed */
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.footer .nav-item {
+    margin-bottom: 0.5rem; /* Consistent spacing between items */
+}
+
+/* Add padding to the left side of the Contact Us section */
+.contact-us {
+    padding-left: 10px; /* Adjust the value as needed for more or less padding */
+}
+
+@media (min-width: 768px) {
+    .footer .row {
+        justify-content: space-around; /* Ensure spacing is even on larger screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* styling for the register page heading */
+#registerHeading
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* styling for the register page text */
+.registrationInfo, .registerName, .form-control
+{
+    color: black !important; 
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;  
+}
+
+/* alings text in register page */
+.registrationInfo, .registerName
+{
+    text-align: center;
+}
+
+input::placeholder
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    font-style: italic; 
+}
+
+/* the styling for login page box*/
+.login-container
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:50vh;
+}
+/* styling for the main login section*/
+.login-box
+{
+    width:400px;
+    padding:20px;
+    border-radius:8px;
+    box-shadow: 0 5px 20px rgba(253, 53, 8, 0.5);
+    border:2px solid rgb(252, 196, 124);
+}
+/* styling for position of password section*/
+.input-password
+{
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+/* styling for show password position*/
+.password-button
+{
+    position:relative;
+    right: 9px;
+}
+
+/*About css */
+#about-section {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Flexbox styles for Opening Hours and Google Maps */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/*FAQS*/
+
+#faq-section {
+    padding-top: 50px;
+    text-align: left;
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 100, 0, 1);
+    border-radius: 5px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(255 244 226);
+}
+
+.faq-answer {
+    padding: 10px;
+    background-color: #fff;
+    text-align: left
+}
+
+/* styling for making alert messages fade out */
+.fade
+{
+    opacity: 0;
+    transition: opacity 5s ease-out;
+}
+
+/* styling for logout-message */
+.logged-out-message {
+    color: #333;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6; 
+    
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    padding: 1.5rem 2rem; 
+    margin: 1.5rem auto;
+    max-width: 600px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling for the container box is in*/
+.review-container
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:50vh;
+}
+
+/* Styling for the review box */
+.review-box
+{
+    width:600px;
+    padding:20px;
+    border-radius:8px;
+    box-shadow: 0 5px 20px rgba(253, 53, 8, 0.5);
+    border:2px solid rgb(252, 196, 124);
+}
+
+.preview-container
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:35vh;
+}
+
+.preview-box
+{
+    width:300px;
+    padding:20px;
+    border-radius:8px;
+    box-shadow: 0 5px 20px rgba(253, 53, 8, 0.5);
+    border:2px solid rgb(252, 196, 124);
+}
+
+.registerName
+{
+    text-align: left;
+}
+
+.preview-text
+{
+    color: black !important; 
+    font-family: 'Raleway', sans-serif;
+    font-size: large; 
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+/* Styling for the starRating div */
+.starRating
+{
+    justify-content: center;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* styling for the star unfilled */
+.star
+{
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+/* styling for the filled star */
+.filled.star
+{
+    color: rgb(252, 196, 124);
+}
+
+/* styling for stars in front of the current hovered over star */
+.star:hover ~ .star 
+{
+    color: #ccc;
+}
+
+/* styling for the star being hovered over */
+.star:hover 
+{
+    color: rgb(252, 196, 124);
+}
+
+/* Cart icon css on navigator */
+.bi-cart {
+    padding-right: 12px; /* Add padding to the path element */
+}
+
+.bi-cart path {
+    stroke: black;          /* Set the stroke color */
+    stroke-width: 0.5;        /* Increase the stroke width to make it thicker */
+}
+
+
+
+/* Cart page CSS */
+
+.cart-text {
+    color: rgba(255, 70, 0, 1) !important;
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold; /* Optional for extra emphasis */
+    
+}
+
+
+.cart-table th,
+.cart-table td {
+    background-color: transparent;
+    
+}
+
+.cart-table {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.cart-table:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transform: scale(1.01); /* Slight scale effect */
+}
+
+/* Product name styling - bold and larger */
+.cart-table td p.mb-0.mt-4 {
+    font-size: 1.2rem; /* Larger font size */
+    font-weight: bold; /* Bolder font */
+    color: #333; /* Darker color for better visibility */
+}
+
+/* Product description styling - smaller and more subtle */
+.cart-table td p.text-muted {
+    font-size: 0.7rem; /* Smaller font size */
+    color: #6c757d; /* Subtle grey color for description */
+}
+
+
+/*.form-control {
+    background-color: transparent;
+}*/
+
+.cart-table {
+    border-color: rgb(245, 240, 230);
+
+}
+
+.cart-table th {
+    font-size: larger;
+}
+
+.cart-total {
+    background-color: rgb(250, 240, 225) !important;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.cart-total:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lifting effect */
+    transform: scale(1.02); /* Slight zoom-in effect */
+}
+
+.rounded-pill {
+    border-color: rgba(255, 100, 0, 1) !important;
+    color: white !important;
+}
+
+.cart-total-container {
+    padding-top: 50px;
+}
+
+div.border-top.border-bottom {
+    border-top-color: rgb(240, 230, 210) !important;
+    border-bottom-color: rgb(240, 230, 210) !important;
+}
+
+.cart-login-null {
+    font-weight: bold;
+}
+
+.cart-table img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.delete-cart-item-button {
+    margin-left: 13px;
+    border-color: black;
+    background-color: rgb(255, 249, 235) !important;
+    /* background-color: rgb(248, 233, 217) !important; */
+    /* border-color: rgb(255, 249, 235) !important; */
+    border-color: rgb(248, 233, 217) !important;
+    
+}
+
+.cross-symbol {
+    /* color: rgba(255, 100, 0, 1) !important; */
+    color: #111a2b !important;
+}
+
+
+
+/* CSS below for checkout page */
+#postcode {
+    text-transform: uppercase;
+}
+
+.your-cart-text {
+    color: rgba(255, 100, 0, 1) !important;
+    font-size: 2rem; 
+    font-weight: bold;
+}
+
+.badge {
+    background-color: rgba(255, 100, 0, 1) !important;
+    color: white !important;
+}
+
+.needs-validation .form-control {
+    background-color: rgb(255, 249, 235) !important; /* light gray */
+    border: 1px solid rgb(220, 220, 200) !important;
+}
+
+.your-cart-list > li {
+    background-color: rgb(255, 249, 235) !important;
+    border: 0.3px solid rgb(220, 220, 200) !important;
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.your-cart-list > li:hover {
+    background-color: rgb(250, 240, 220) !important; /* Slightly darker beige */
+    border-color: rgb(200, 200, 180) !important; /* Slightly darker border */
+    transform: scale(1.02); /* Subtle scale effect */
+}
+
+.your-cart-list > li:last-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.your-cart-list small {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.your-cart-list span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* .clicked-effect {
+    background-color: red !important;
+    transform: scale(1.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+} */
+
+/* Style for flashing red effect */
+.flash-red {
+    background-color: red !important;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease-in-out !important;
+}
+
+
+.cart-quantity {
+    padding: 3px;
+}
+
+
+
+/* Order History/ Recent Orders page */
+.order-History-Title {
+    color: rgba(255, 70, 0, 1) !important;
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold; /* Optional for extra emphasis */
+}
+
+.order-list-container {
+    background-color: rgb(255, 245, 230) !important; /* Light gray background */
+    border-color: rgb(250, 240, 225) !important;
+}
+
+/* Individual order card */
+.order-list-container .border  {
+    background-color: rgb(255, 245, 230) !important; /* White background for contrast */
+    border: 1px solid rgb(235, 225, 205) !important;
+    transition: transform 0.2s ease-in-out;
+}
+
+.order-list-container .border:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.order-list-container ul li {
+    background-color: rgb(252, 240, 225) !important;
+    border: 1px solid rgb(230, 225, 200) !important;
+    transition: transform 0.2s ease-in-out;
+}
+
+.order-list-container ul li h6 {
+    font-weight: 400;
+}
+
+.order-list-container ul li:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+
+.delivery-address {
+    background-color: rgb(255, 245, 235) !important;
+}
+

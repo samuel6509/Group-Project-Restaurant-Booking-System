@@ -1,0 +1,510 @@
+.admin-container {
+    display: flex;
+    height: 100vh;
+}
+
+.admin-main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Dashboard Heading */
+.dashboard-heading {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Dashboard Subtext */
+.dashboard-subtext {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Sidebar Styles */
+.sidebar {
+     width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+ 
+    overflow-y: auto; /* Enables scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    padding-bottom: 20px; /* Space */
+}
+
+/* Custom Scrollbar (Optional for Better UI) */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.sidebarTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebarMenu {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.sidebarItem {
+    margin-bottom: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #444;
+    transition: background-color 0.3s;
+}
+
+.sidebarItem.active {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #19233F;
+    transition: background-color 0.3s;
+}
+/* 
+.sidebarLink {
+    
+} */
+
+.logoutContainer {
+     position: fixed;
+    bottom: 20px;
+    margin: auto;
+    
+}
+
+.logoutButton {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+.logoutButton:hover,
+.logoutButton:active,
+.logoutButton:focus {
+    background-color: #ff4d4f !important;
+}
+/* Edit Review Form Styles */
+.edit-review-form,
+.create-faq-form,
+.edit-faq-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-review-heading,
+.create-faq-heading,
+.edit-faq-heading,
+.members-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-textarea {
+    min-height: 100px;
+}
+
+.form-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+.form-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Review Image Styles */
+.review-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-image {
+    max-width: 100%;
+    max-height: 200px;
+    margin-left: 500px;
+    border-radius: 8px;
+}
+
+.no-image-text {
+    color: #777;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* Manage Reviews Container */
+.manage-reviews-container,
+.messages-container,
+.faqs-container,
+.members-container {
+    padding: 20px;
+}
+.manage-reviews-heading,
+.messages-heading,
+.faqs-heading {
+    font-size: 28px;
+    color: #333;
+}
+
+.manage-reviews-table,
+.messages-table,
+.members-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.manage-reviews-table th,
+.manage-reviews-table td,
+.messages-table th,
+.messages-table td,
+.members-table th,
+.members-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faqs-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.faqs-table th,
+.faqs-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.faqs-table th:first-child,
+.faqs-table td:first-child {
+    width: 5%; /* Reduce width for the number column */
+    text-align: center;
+}
+
+.faqs-table th:nth-child(3), /* Answer column */
+.faqs-table td:nth-child(3) {
+    width: 50%; /* Allocate more space to the Answer column */
+    white-space: normal; /* Allow wrapping for long text */
+    word-wrap: break-word; /* Break long words */
+}
+
+.faqs-table th:last-child, /* Actions column */
+.faqs-table td:last-child {
+    width: 20%; /* Keep Actions column consistent */
+    text-align: center;
+}
+
+/* Adjust table header background */
+.faqs-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+textarea {
+    resize: horizontal;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.manage-reviews-review-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.edit-button,
+.search-button,
+.submit-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.cancel-button {
+    padding: 5px 10px;
+    background-color: #ff4d4f;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #d9363e;
+}
+
+/* Pagination Styles */
+.pagination-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination-button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination-button:hover {
+    background-color: #f0f0f0;
+}
+
+.active-pagination-button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.filter-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filter-input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-button,
+.create-button,.create-role-permission-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    grid-column: span 2;
+    margin-top: 20px;
+    justify-self: center;
+}
+.create-button {
+    float: right;
+    margin-bottom: 20px;
+}
+.read-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Login Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-container h2 {
+    margin-bottom: 20px;
+}
+.form-checkbox {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 8px !important;
+    vertical-align: middle !important;
+    accent-color: #007bff !important;
+    cursor: pointer !important;
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.read-button,
+.delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.read-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
