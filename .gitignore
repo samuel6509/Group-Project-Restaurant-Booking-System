@@ -417,6 +417,5 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
-README.txt
 .gitignore
 .gitignore
