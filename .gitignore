@@ -419,3 +419,11 @@ FodyWeavers.xsd
 *.msp
 .gitignore
 .gitignore
+INDIVIDUAL-REPORT/SOURCE-CODE/ SW734 Individual Report.aux
+INDIVIDUAL-REPORT/SOURCE-CODE/ SW734 Individual Report.fdb_latexmk
+INDIVIDUAL-REPORT/SOURCE-CODE/ SW734 Individual Report.fls
+INDIVIDUAL-REPORT/SOURCE-CODE/ SW734 Individual Report.synctex.gz
+
+storage/logs/
+storage/framework/
+storage/app/private/
