@@ -1,0 +1,173 @@
+% Created by sw734
+
+% document setup
+\documentclass[twoside,12pt,titlepage,a4paper]{article}
+\usepackage{url}
+% for the bibliography 
+\usepackage{natbib}
+% for line numbers 
+\usepackage{lineno}
+% for color
+\usepackage{xcolor}
+% for changing the layout
+\usepackage[margin=1in]{geometry}
+% for adding images
+\usepackage{graphicx}
+% to put figures where I want them
+\usepackage{float}
+
+% enabling line numbers
+\linenumbers
+% line spacing to spec 
+\renewcommand{\baselinestretch}{1.3}
+
+\title{COMP6000 Restaurant Booking System Individual Report}
+\author
+{
+    \url{sw734@kent.ac.uk} \\[1mm]
+    \includegraphics[scale=0.6]{Uni_Logo.png} \\
+    School of Computing \\
+    University of Kent \\
+}
+
+\begin{document}  
+\newgeometry{hmarginratio=1:1}
+\maketitle
+\restoregeometry 
+
+\section{Introduction}
+\label{Introduction}
+Now the project has come to an end and I have had a chance to reflect, as a whole I am pleased with how the 
+project turned out and how the project progressed over this last academic year. My experience working on this 
+project has been good for the most part, the tasks given to each member was completed by them (with a few 
+exceptions) as well as members willing to take parts in various aspects of the project.
+
+To briefly summarize, I believe that my contribution to this project was over what was expected of me. I was 
+consistent with my contributions rather than working in smaller spurts of energy which allowed me to get tasks
+done at a pace that works for me and my other group members. Although I exceeded what was expected of me, like
+any person there were parts that I could have done better or been more involved in.
+
+\section{Project Participation}
+\label{Project Participation}
+Throughout the development of the project, I made sure that I pushed myself to partake in near enough every 
+part of the project. I am pleased with myself that I got stuck in and participated in many if not all aspects 
+of the project.
+
+In no particular order here are the parts of the project I participated in (there is a chance that I missed a 
+few)…
+
+I put myself in charge of creating the database script and maintaining it, this involved me creating the main 
+chunk of the database with other members adding their own specific tables for their features. I made sure 
+people would add their new tables and inserts into the script as I know that this is good practice in case of 
+an unseen error.
+
+I assisted LJ330 in creating the ‘generic layout’, I focused on creating the navigation bar which is seen on 
+the generic menu as well as turning this layout into a react component. When we began making the layout we were
+still researching into the best practices for our project, and I found out that if you make it into a react 
+component you can import it onto any page you want to use it which meant the code was only written once.
+
+I created  the logic for randomly displaying 3 random reviews from the database onto the home page.
+
+I created all 3 menu pages, the only parts I didn’t do for this feature were the add to cart and the 
+nutritional info.
+
+I created the search bar.
+
+I created all 6 pages found from the account icon on the navigation bar, these pages being register, login, 
+account information, change password, logout and create a review. I also created all the backend logic for 
+these features.
+
+I created some pages on the admin dashboard with these being the manage menu items and create menu items. I 
+created everything associated with these pages including the backend and pages which you navigate to via these
+such as edit menu item.
+
+I wrote the abstract.
+
+I wrote the technical report.
+
+I made sure to be available for other group members to assist in ways such as debugging or for general 
+questions.
+
+Again, I may be forgetting some things, but I basically made sure to cover all areas and help out as much as 
+possible.
+
+\section{Critical Analysis}
+\label{Critical Analysis}
+Although I feel like I was a strong group member throughout the duration of this project, there a parts where I
+feel that there is room for improvement. These ranging from availability, holiday downtime and feature 
+implementation.
+
+\vspace*{-0.05in}
+\subsection{On Myself}
+\vspace*{-0.05in}
+To begin, here are my top 2 parts that I am happy with myself in doing…
+
+Firstly, I am pleased with my git contributions throughout this project. I made sure to push to git 
+incrementally and regularly as I know this is a good practice not just for me but for other group members, I 
+also pulled from git before I began coding for the day and pulled from git when I finished coding for the day.
+This meant that I never had a problem of breaking the code base due to conflicts as I always was up to date.
+
+Secondly, I am pleased with how I implemented my backend logic, specifically with my authentication and how 
+images are loaded on the project and how users and admins can upload images to be used on the website. My 
+authentication logic fully works with examples being password hashing and the use of cookies and tokens for 
+logging and keeping a user logged in.
+
+In contrast, there were parts which I done (or didn’t do) which could have been better or of a higher 
+standard, with my main 3 being…
+
+I left a one or two of my features half-baked so to speak, for example the search bar on the navigation bar. 
+The way I left this was that it trims all characters to lowercase and is injected as a url, for example it only
+really works with home and about as their routes are both lower case. I should of gone back and made it so like
+words go to their suggested web page but I was too focused on other parts.
+
+Another limitation I bought upon myself was having too much down time in the winter break. I did not push any 
+work in these 4 weeks (roughly) which I regret doing, I done this as I didn’t want to burn out and I knew that
+once term started again, I would go back to consistent work, although I stuck by my word it would have been 
+better if I stayed consistent throughout the break also.
+
+And for my last criticism, I wished I used the external pieces of software I setup, for example Trello 
+workspace for the kanban board. I set this up so every group member could easily see what they needed to work 
+on and what they have already done. I intended to make a new board for every sprint so members could see where
+every individual was at with their feature, but we never used it in the end. Also, the weekly minutes, nearing
+the end of the project we were all caught up with finishing features and I didn’t make a note of every week, I
+regret doing this.
+
+\vspace*{-0.05in}
+\subsection{On The Group}
+\vspace*{-0.05in}
+Focusing on the group as a whole, we worked well and once we got going it was even better. Although I believe 
+as a unit we worked particularly well I have some criticisms for a few of my group members, even though I 
+believe they could of improved on these limiting factors as a whole everyone worked well and I am very pleased
+with each and every one of my members as a whole.
+
+My main two criticisms are these…
+
+Oj54 was supposed to implement the menu’s as one of his features but never got round to doing it, this can be 
+seen in the weekly minutes. I can commend him for doing the background research for implementing this but they
+never got round to doing it. In the long run this was not an issue as I decided to take this on as one of my 
+features and I am pleased with how it came out; it would have been nice for oj54 to implement this and have 
+more features under his name.
+
+Secondly, there was inconsistent participation in our weekly meeting on Friday without our supervisor. Some 
+people would stay home and ask if they could join via teams, which was difficult as it meant we would have to 
+find a room where we could do this without interrupting other students. The reason this is important to me was
+because it allowed me to easily see what people were doing and either explain things or help members with 
+issues. I understand that every person has different arrangements and issues and in the end it didn’t impact 
+that the project enough to call it a serious issue.
+
+\section{Conclusion}
+\label{Conclusion}
+To conclude my thoughts and feelings on the project, I am overall pleased with my performance as well as the 
+groups. If I had more time I would go back and improve on my unfinished features.
+
+If I could go back and start this project all over again keeping the knowledge I have learnt, I would make sure
+I used things such as Trello as I believe that would have helped work flow.
+
+One main takeaway from this project for me is that I have a better understanding on that people work at very 
+different paces, instead of rushing members, support them.
+
+Now I have finished this project, my next step is to take everything I have learnt and build a website for my 
+brother-in-law who has just opened a tattoo shop. I believe I could make a good website with everything I have
+learnt.
+
+\end{document}
